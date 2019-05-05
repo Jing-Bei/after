@@ -1,0 +1,48 @@
+2019-05-04 03:35:12 Error: Call to a member function query() on null in D:\wamp64\www\laychat\vendor\workerman\Applications\Events.php:124
+Stack trace:
+#0 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"change...')
+#1 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"change...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 D:\wamp64\www\laychat\vendor\workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#5 D:\wamp64\www\laychat\vendor\workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#6 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#7 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#8 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#9 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#10 D:\wamp64\www\laychat\vendor\workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#11 {main}
+2019-05-04 03:39:08 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list' in D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `after_c...')
+#1 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `after_c...', NULL)
+#2 D:\wamp64\www\laychat\vendor\workerman\Applications\Events.php(125): GatewayWorker\Lib\DbConnection->query('UPDATE `after_c...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"change...')
+#4 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"change...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\wamp64\www\laychat\vendor\workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\wamp64\www\laychat\vendor\workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\wamp64\www\laychat\vendor\workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-05-04 03:43:01 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list' in D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `after_c...')
+#1 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `after_c...', NULL)
+#2 D:\wamp64\www\laychat\vendor\workerman\Applications\Events.php(124): GatewayWorker\Lib\DbConnection->query('UPDATE `after_c...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"change...')
+#4 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"change...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\wamp64\www\laychat\vendor\workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\wamp64\www\laychat\vendor\workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\wamp64\www\laychat\vendor\workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\wamp64\www\laychat\vendor\workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\wamp64\www\laychat\vendor\workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}

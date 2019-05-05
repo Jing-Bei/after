@@ -1,0 +1,188 @@
+2019-04-24 15:51:09 pid:12549 Workerman[start.php] start in DEBUG mode
+2019-04-24 16:02:22 pid:12551 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(40): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #49, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #31)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#17 {main}
+2019-04-24 16:02:22 pid:12551 Worker[12551] process terminated
+2019-04-24 16:02:22 pid:12549 worker[ChatBusinessWorker:12551] exit with status 64000
+2019-04-24 16:02:32 pid:12756 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(40): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #32)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#17 /home/www/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#18 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#19 {main}
+2019-04-24 16:02:32 pid:12756 Worker[12756] process terminated
+2019-04-24 16:02:32 pid:12549 worker[ChatBusinessWorker:12756] exit with status 64000
+2019-04-24 16:02:37 pid:12758 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(73): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"chatMe...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"chatMe...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #51, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #33)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#17 /home/www/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#18 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#19 {main}
+2019-04-24 16:02:37 pid:12758 Worker[12758] process terminated
+2019-04-24 16:02:37 pid:12549 worker[ChatBusinessWorker:12758] exit with status 64000
+2019-04-24 16:02:52 pid:12759 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(73): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"chatMe...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"chatMe...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #52, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #34)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#17 /home/www/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#18 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#19 {main}
+2019-04-24 16:02:52 pid:12759 Worker[12759] process terminated
+2019-04-24 16:02:52 pid:12549 worker[ChatBusinessWorker:12759] exit with status 64000
+2019-04-24 16:03:01 pid:12550 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(40): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #49, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #31)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#17 {main}
+2019-04-24 16:03:01 pid:12550 Worker[12550] process terminated
+2019-04-24 16:03:01 pid:12549 worker[ChatBusinessWorker:12550] exit with status 64000
+2019-04-24 16:03:03 pid:12761 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(40): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #53, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #35)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#17 /home/www/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#18 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#19 {main}
+2019-04-24 16:03:03 pid:12761 Worker[12761] process terminated
+2019-04-24 16:03:03 pid:12549 worker[ChatBusinessWorker:12761] exit with status 64000
+2019-04-24 16:03:10 pid:12764 exception 'PDOException' with message 'SQLSTATE[RDS00] [2801] ip not in whitelist, client ip is 39.105.187.27' in /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php:1709
+Stack trace:
+#0 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1709): PDO->__construct('mysql:dbname=sh...', 'shop_test', 'Cvd%%ntNMs', Array)
+#1 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/www/workerman/vendor/workerman/gateway-worker/src/Lib/Db.php(48): GatewayWorker\Lib\DbConnection->__construct('rm-2zeb8h0783v4...', 3306, 'shop_test', 'Cvd%%ntNMs', 'shop', 'utf8')
+#3 /home/www/workerman/Applications/Events.php(73): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"chatMe...')
+#5 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"chatMe...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 /home/www/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #55, 2, NULL)
+#9 /home/www/workerman/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #37)
+#10 /home/www/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#11 /home/www/workerman/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /home/www/workerman/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#13 /home/www/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /home/www/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/www/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#16 /home/www/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#17 /home/www/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#18 /home/www/workerman/start.php(37): Workerman\Worker::runAll()
+#19 {main}
+2019-04-24 16:03:10 pid:12764 Worker[12764] process terminated
+2019-04-24 16:03:10 pid:12549 worker[ChatBusinessWorker:12764] exit with status 64000
+2019-04-24 16:06:16 pid:12549 Workerman[start.php] stopping ...
+2019-04-24 16:06:16 pid:12549 Workerman[start.php] has been stopped
+2019-04-24 16:10:44 pid:12826 Workerman[start.php] start in DEBUG mode
+2019-04-25 15:08:06 pid:20598 Workerman[start.php] restart 
+2019-04-25 15:08:06 pid:20598 Workerman[start.php] is stopping ...
+2019-04-25 15:08:06 pid:12826 Workerman[start.php] stopping ...
+2019-04-25 15:08:06 pid:12826 Workerman[start.php] has been stopped
+2019-04-25 15:08:06 pid:20598 Workerman[start.php] stop success
+2019-04-25 17:12:02 pid:21330 Workerman[start.php] start in DEBUG mode
+2019-04-26 12:49:43 pid:21330 Workerman[start.php] stopping ...
+2019-04-26 12:49:43 pid:21330 Workerman[start.php] has been stopped
+2019-04-26 12:49:51 pid:28057 Workerman[start.php] restart 
+2019-04-26 12:49:51 pid:28057 Workerman[start.php] is stopping ...
+2019-04-26 12:49:51 pid:28057 Workerman[start.php] stop success
+2019-04-26 13:20:52 pid:1728 Workerman[start.php] start in DEBUG mode
+2019-04-28 13:13:35 pid:18501 Workerman[start.php] start in DEBUG mode
+2019-04-28 15:14:14 pid:18501 Workerman[start.php] stopping ...
+2019-04-28 15:14:14 pid:18501 Workerman[start.php] has been stopped
+2019-04-28 15:14:17 pid:19236 Workerman[start.php] start in DAEMON mode
+2019-04-29 08:58:35 pid:5690 Workerman[start.php] status 
+2019-04-29 08:58:35 pid:5690 Workerman[start.php] not run
+2019-05-03 15:45:19 pid:9281 Workerman[start.php] stop 
+2019-05-03 15:45:19 pid:9281 Workerman[start.php] not run
