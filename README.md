@@ -26,9 +26,13 @@ back 文件夹下有一个 after.sql 导入即可
 3、启动 getwayworker，本案例 基于的win平台的gatewayworker，如果您想在linux下部署，请先阅读 gatewayworker 文档有了基本的理解，然后下载 linux 版本的
 gatewayworker，然后移植本程序的业务逻辑部分即可。如果您是win，请双击/vendor/Workerman/start_for_win.bat,然后不要关闭窗口。   
   
-4、访问聊天系统，进入前台，注册新用户登录即可聊天。 请用两个浏览器打开，登录不同的账户互相聊天。后台默认账号是admin，密码456789  
+4、访问聊天系统，进入前台，注册新用户登录即可聊天。 请用两个浏览器打开，登录不同的账户互相聊天。后台默认账号是admin，密码admin  
 
-5、在win下一定要记得双击 after/vendor/Workerman/start_for_win.bat 启动 workerman，不要关闭！！！
+5、在win下启动方式，双击 after/vendor/Workerman/start_for_win.bat 启动 workerman，不要关闭！停止按 Ctrl+c
+
+6、在linux下启动方式，php /after/vendor/workerman/start.php start (启动，可以输出错误信息，但是关闭远程连接后会自动停止)
+	php /after/vendor/workerman/start.php start -d (守护进程模式启动，关闭Xshell连接不会停止)
+	php /after/vendor/workerman/start.php stop (停止服务)
 
 # 了解效果
 http://chat.itsideline.com

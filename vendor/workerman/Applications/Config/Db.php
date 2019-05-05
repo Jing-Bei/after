@@ -14,10 +14,10 @@ class Db
      * @var array
      */
     public static $db1 = array(
-        'host'    => '39.105.187.27',
+        'host'    => '127.0.0.1',
         'port'    => 3306,
         'user'    => 'root',
-        'password' => 'mima123456',
+        'password' => '123456',
         'dbname'  => 'after',
         'charset'    => 'utf8'
     );
