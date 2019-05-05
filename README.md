@@ -1,5 +1,5 @@
 # after
-layIM+workerman+thinkphp5的客服系统 v1.0  
+Workerman+Layim+TP5简单客服系统  
 
 实现了功能:  
 1、通过after后台实现对聊天成员的增删改查，动态推送给在线的用户    
