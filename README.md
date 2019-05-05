@@ -30,11 +30,7 @@ gatewayworker，然后移植本程序的业务逻辑部分即可。如果您是w
 
 5、在win下启动方式，双击 after/vendor/Workerman/start_for_win.bat 启动 workerman，不要关闭！停止按 Ctrl+c
 
-6、在linux下启动方式，php /after/vendor/workerman/start.php start (启动，可以输出错误信息，但是关闭远程连接后会自动停止)
-
-php /after/vendor/workerman/start.php start -d (守护进程模式启动，关闭Xshell连接不会停止)
-
-php /after/vendor/workerman/start.php stop (停止服务)
+6、在linux下启动方式，php /after/vendor/workerman/start.php start (启动，可以输出错误信息，但是关闭远程连接后会自动停止)；php /after/vendor/workerman/start.php start -d (守护进程模式启动，关闭Xshell连接不会停止)；php /after/vendor/workerman/start.php stop (停止服务)
 
 # 了解效果
 http://chat.itsideline.com
