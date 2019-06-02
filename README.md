@@ -31,7 +31,19 @@ back 文件夹下有一个 after.sql 导入即可
 
 6、在linux下启动方式，php /after/vendor/workerman/start.php start (启动，可以输出错误信息，但是关闭远程连接后会自动停止)；php /after/vendor/workerman/start.php start -d (守护进程模式启动，关闭Xshell连接不会停止)；php /after/vendor/workerman/start.php stop (停止服务)
 
-# 了解效果
+
+# 效果
+![image](https://github.com/Jing-Bei/after/blob/master/images/01.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/02.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/03.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/04.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/05.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/06.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/07.png)
+![image](https://github.com/Jing-Bei/after/blob/master/images/08.png)
+
+
+# 预览地址
 http://chat.itsideline.com
 
 
