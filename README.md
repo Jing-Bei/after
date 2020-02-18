@@ -9,8 +9,9 @@ Workerman+Layim+TP5简单客服系统
 5、实现了在线状态显示  
 
 # 注意事项:  
-back文件加下有数据库备份文件，请建立数据库，并导入。同时配置项目中的config文件中的datebase.php的数据库信息。  
-需要修改Workerman数据库配置 vendor/Workerman/Applications/Config/Db.php
+1、back文件加下有数据库备份文件，请建立数据库，并导入。同时配置项目中的config文件中的datebase.php的数据库信息。  
+2、需要修改Workerman数据库配置 vendor/Workerman/Applications/Config/Db.php
+3、确保php已安装pcntl扩展并且未禁用pcntl相关函数
 
 # 关于LayIM
 因为layIM不开源，要是商用的话，建议去http://layim.layui.com  这里，layUI的官网去授权吧  
